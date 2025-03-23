@@ -43,11 +43,6 @@ public class AndroidActions {
 			));
 	}
 	
-	public Double getFormattedAmount(String stringValue) {
-		Double price = Double.parseDouble(stringValue.substring(1));
-		return price;
-	}
-	
 	public void scrollToText(String text) {
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+text+"\"))"));
 	}

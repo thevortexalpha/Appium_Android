@@ -54,6 +54,11 @@ public class CartPage extends AndroidActions{
 		return getFormattedAmount(totalAmount.getText());
 	}
 	
+	public Double getFormattedAmount(String stringValue) {
+		Double price = Double.parseDouble(stringValue.substring(1));
+		return price;
+	}
+	
 	public void acceptTermsConditions() {
 		longPressAction(termsConditionButton);
 		acceptButton.click();
