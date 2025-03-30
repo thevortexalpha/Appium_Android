@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="Smoke"/>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="thevortexalpha.Appium.testUtils.ListenersNG"></listener>
+	</listeners>
+	<test thread-count="5" name="End to end test">
+		<classes>
+			<class name="thevortexalpha.Appium.tests.O01_ECommerce_E2E_TC01" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="Positive and negative test">
+		<classes>
+			<class name="thevortexalpha.Appium.tests.O01_ECommerce_E2E_TC02" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

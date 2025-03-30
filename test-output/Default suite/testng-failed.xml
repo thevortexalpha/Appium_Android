@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="thevortexalpha.AppiumFrameworkDesign.O01_ECommerce_E2E_TC01">
+      <class name="thevortexalpha.Appium.tests.O01_ECommerce_E2E_TC02">
         <methods>
-          <include name="preSetup"/>
           <include name="configureAppium"/>
-          <include name="eCommerceE2EHybrid" invocation-numbers="1"/>
           <include name="tearDown"/>
+          <include name="preSetup"/>
+          <include name="fillFormPositiveFlow"/>
+          <include name="fillFormNegativeFlow"/>
         </methods>
-      </class> <!-- thevortexalpha.AppiumFrameworkDesign.O01_ECommerce_E2E_TC01 -->
+      </class> <!-- thevortexalpha.Appium.tests.O01_ECommerce_E2E_TC02 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
